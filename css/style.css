@@ -1,0 +1,200 @@
+/* 1. General */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Background Color */
+  --bg-black: #090b3c;
+  --bg-white: #fff;
+  --bg-light-white: #fcfcfc;
+  --bg-light-2: #f2f7fa;
+  --bg-dark-green: #0e9d80;
+  --bg-features-1: #fff6d6;
+  --bg-features-2: #ebdcf9;
+  --bg-features-3: #ddf5fc;
+  --bg-features-4: #dcf6e8;
+  --bg-features-5: #f8e4e1;
+  --bg-features-6: #fbffd4;
+  /* Text Color */
+  --text-black: #000;
+  --text-white: #fff;
+  --text-dark-gray: #4c535d;
+  --text-light-2: #798089;
+  --text-light-3: #5e5e72;
+  --text-light-4: #a0a0a0;
+  --text-dark-green: #12c4a0;
+  --text-orange: #ff5d2a;
+  --text-yellow: #ffc100;
+
+  /* Fonts */
+  --primary-font: Quicksand;
+  --secondary-font: "Poppins", sans-serif;
+  --normal-font-weight: 400;
+  --bold-font-weight: 700;
+}
+body {
+  font-family: var(--primary-font);
+  font-weight: var(--normal-font-weight);
+  background-color: var(--bg-white);
+  overflow: unset;
+}
+/* Custom Css */
+.learn-more-btn {
+  background-color: var(--bg-black);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-white) !important;
+  padding: 12px 29px !important;
+  border-radius: 10px;
+  border: 2px solid var(--bg-black);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.7s linear;
+}
+.btn-extra-header {
+  color: var(--text-dark-gray) !important;
+  background-color: transparent;
+  border: 2px solid var(--text-dark-gray);
+}
+/* Navbar */
+.header_wrapper .navbar {
+  transition: all 0.2s linear;
+}
+
+.header_wrapper .navbar-brand img {
+  max-width: 210px;
+  height: auto;
+}
+.header_wrapper .menu-navbar-nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.header_wrapper .nav-item {
+  margin: 0 10px;
+}
+.header_wrapper .nav-item .nav-link {
+  font-weight: var(--bold-font-weight);
+  font-size: 18px;
+  color: var(--text-dark-gray);
+  line-height: 1;
+}
+.header_wrapper .nav-item .nav-link.active {
+  color: var(--bg-dark-green);
+}
+.header-scrolled {
+  position: fixed;
+  margin-top: 0;
+  /* z-index: 99; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background: var(--bg-white);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+}
+.header-scrolled .navbar-brand img {
+  width: 190px;
+  height: auto;
+  animation: animated 0.1s ease-in-out;
+}
+@keyframes animated {
+  0% {
+    width: 210px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 190px;
+  }
+}
+.header-scrolled .nav-item .nav-link {
+  font-size: 17px;
+}
+.banner_wrapper {
+  display: flex;
+  width: 100%;
+  padding: 100px 0 125px;
+  background: url(../images/bg.png) no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.banner_wrapper  .banner-subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-light-3);
+}
+.banner_wrapper .banner-title{
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    color: var(--text-black);
+}
+.banner_wrapper .banner-title span{
+    color: var(--bg-dark-green);
+}
+.banner_wrapper .banner-title-text{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 450px;
+    color: var(--text-light-2);
+}
+.banner_wrapper .learn-more-btn-section{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+.banner_wrapper .header-img-section img
+{
+    width: 100%;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* 4. Client */
+.clients{
+    padding: 80px 0 50px;
+    background: var(--bg-light-2);
+}
+.clients h2{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.25;
+    margin-bottom: 40px;
+    color: var(--text-light-2);
+}
+.client-slider-section .item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.client-slider-section img{
+    width: auto !important;
+    height: 50px;
+    object-fit: cover;
+}

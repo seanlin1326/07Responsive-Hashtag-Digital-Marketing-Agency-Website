@@ -1,0 +1,53 @@
+
+@media (max-width:1230px) 
+{
+  .navbar-wrapper  .learn-more-btn{
+    padding: 12px 10px;
+  }
+  .navbar-wrapper .nav-item{
+    margin: 0 0px !important;
+}
+
+}
+@media (max-width:1070px) 
+{
+    /* Navbar */ 
+    
+    .header_wrapper .nav-item .nav-link{
+        font-size: 16px;
+    }
+    /* About */
+}
+@media (max-width:991px) {
+    .navbar-nav .nav-item
+    {
+        text-align: center;
+    }
+    .navbar-wrapper .nav-item{
+        margin-top: 15px;
+    }
+    .navbar-wrapper .nav-item:last-child{
+        margin-bottom: 20px;
+    }
+
+    .navbar-wrapper .navbar-collapse{
+        background: white;
+    }
+    .banner-wrapper .banner-title{
+        font-family: var(--secondary-font);
+        font-size: 2.4rem;
+        font-weight: var(--bold-font-weight);
+    }
+}
+@media (max-width:767px) 
+{
+    /* Banner */
+    
+    .banner-wrapper .row{
+        flex-direction: column-reverse;
+    }
+    .banner_wrapper .learn-more-btn-section{
+        justify-content: center;
+    }
+    /* Pricing */
+}
