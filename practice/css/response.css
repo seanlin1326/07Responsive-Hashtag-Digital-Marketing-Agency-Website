@@ -1,4 +1,10 @@
-
+@media (max-width: 1300px) {
+    /* Navbar */
+    .navbar-wrapper .navbar-menu
+    {
+        width: auto;
+    }
+  }
 @media (max-width:1230px) 
 {
   .navbar-wrapper  .learn-more-btn{
