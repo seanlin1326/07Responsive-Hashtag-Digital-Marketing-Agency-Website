@@ -4,6 +4,10 @@
     {
         width: auto;
     }
+    /* faqs */
+    .faq_wrapper p{
+        font-size: 28px;
+    }
   }
 @media (max-width:1230px) 
 {

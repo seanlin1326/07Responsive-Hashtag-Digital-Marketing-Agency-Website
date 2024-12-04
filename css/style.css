@@ -518,3 +518,204 @@ body {
    vertical-align: bottom;
    color: var(--text-yellow);
 }
+/* Reviews */
+.testimonial_wrapper{
+  padding: 100px 0;
+}
+.testimonial_wrapper .testimonials_subtitle{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: var(--text-light-3);
+}
+.testimonial_wrapper .testimonials_title{
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 80px;
+  color: var(--text-black);
+}
+.testimonial_wrapper .testimonials_card{
+  border-radius: 15px;
+  padding: 50px;
+  background-color: var(--bg-white);
+  box-shadow: 0 5px 40px rgb(0 0 0/15%);
+}
+.testimonial_wrapper .testimonials_card h3
+{
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: var(--text-black);
+}
+.testimonial_wrapper .testimonials_role{
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 25px;
+  color: var(--text-dark-green);
+}
+.testimonial_wrapper .testimonials_text
+{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+/* Brands */
+.brand_wrapper
+{
+  padding: 100px 0;
+  background: var(--bg-light-2);
+}
+.brand_wrapper .brand_subtitle
+{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: var(--text-light-3);
+}
+.brand_wrapper .brand_title
+{
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: var(--text-black);
+}
+.brand_wrapper .showcase_card img{
+  width: 100%;
+  border-radius: 15px;
+  padding: 45px 25px;
+  background-color: var(--bg-white);
+  box-shadow: 0 5px 40px rgb(0 0 0/8%);
+  transition: 0.7s;
+}
+.brand_wrapper .showcase_card img:hover
+{
+  transform: scale(1.2);
+  position: relative;
+  z-index: 2;
+}
+/* 10 FAQ */
+.faq_wrapper{
+  padding: 100px 0 0;
+}
+.faq_wrapper .faq_subtitle{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: var(--text-light-3);
+}
+.faq_wrapper .faq_title{
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: var(--text-black);
+}
+.faq_wrapper .accordion-button:hover,
+.faq_wrapper .accordion-button:focus
+{
+  box-shadow: none;
+  color: var(--bg-dark-green);
+}
+.faq_wrapper .accordion-item{
+  border:0;
+  /* border-bottom: 1px solid var(--text-dark-gray); */
+} 
+.faq_wrapper .accordion-button
+{
+  font-size: 21px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--text-black);
+  background: var(--bg-white);
+  border-radius: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 0px solid var(--text-light-3);
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.faq_wrapper .accordion-button::after{
+  display: inline-block;
+  content: '\2b';
+  font-family: 'Font Awesome 5 Free';
+  background-image: none;
+  font-size: 16px;
+}
+/* .faq_wrapper .accordion-button:not(.collapsed){
+  box-shadow: none !important;
+} */
+.faq_wrapper .accordion-button:not(.collapsed):after{
+  display: inline-block;
+  content: '\2212';
+  font-family: 'Font Awesome 5 Free';
+  background-image: none;
+  font-size: 16px;
+  font-weight: 800;
+  transform: unset;
+}
+.faq_wrapper .accordion-body{
+  color: var(--text-black);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  padding-bottom: 25px;
+  line-height: 1.5;
+}
+/* Footer */
+.footer_wrapper{
+  padding: 100px 0 25px;
+  background: url(../images/bg_footer.png) no-repeat;
+  background-size: cover;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+}
+.footer_wrapper .footer_logo img
+{
+ max-width: 30%;
+}
+.footer_wrapper .footer_text,
+.footer_wrapper .footer_text a{
+  margin-top: 30px;
+  color: var(--text-white);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+} 
+.footer_wrapper .footer_title{
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-white);
+  margin-bottom: 25px;
+}
+.footer_wrapper .footer_social_media_icon
+{
+  padding-right: 30px;
+  color: var(--text-white);
+  font-size: 20px;
+}
+.footer_wrapper .footer_credits{
+  color: var(--text-white);
+  border-top: 1px solid var(--text-white);
+  padding-top: 20px;
+  margin-top: 30px;
+}
+.footer_wrapper .footer_credits a{
+  color: var(--text-yellow);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}

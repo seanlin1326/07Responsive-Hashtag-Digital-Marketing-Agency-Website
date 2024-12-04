@@ -78,7 +78,27 @@
     justify-content: center;
   }
   /* Pricing */
-  .free_trial .free_title{
+  .free_trial .free_title {
     font-size: 24px;
   }
+  /* 10 FAQ */
+  .faq_wrapper .accordion-button {
+    font-size: 18px;
+  }
+  .footer_wrapper .footer_logo img {
+    max-width: 50%;
+  }
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-light-2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-black);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-black);
 }
